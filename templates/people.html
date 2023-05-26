@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>Phone number</th>
+    </thead>
+    <tbody>
+    {% for personi in people %}
+    <tr>
+        <td>{{personi.id}}</td>
+        <td>{{personi.name}}</td>
+        <td>{{personi.date_of_birth}}</td>
+        <td>{{personi.phone_number}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
